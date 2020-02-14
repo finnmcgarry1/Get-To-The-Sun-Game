@@ -4,11 +4,34 @@ using UnityEngine;
 
 public class LavaDamagePlayer : MonoBehaviour
 {
+    bool IsDamage = false;
+
+    private void Start()
+    {
+        InvokeRepeating("Damage", 2.0f, 1f);
+    }
+
+    void Damage()
+    {
+        if (IsDamage == true)
+        {
+            GameLogicScript.health--;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D col)
     {
 
-        print(col);
-            GameLogicScript.health--;
-        
+        switch (col.tag)
+        {
+            case "Player":
+                IsDamage = true;
+                break;
+
+            default:
+                IsDamage = false;
+                break;
+        }
+
     }
 }
