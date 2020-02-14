@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class LavaDamagePlayer : MonoBehaviour
 {
-    bool IsDamage = false;
+    bool IsDamageLava = false;
 
     private void Start()
     {
-        InvokeRepeating("Damage", 2.0f, 1f);
+        InvokeRepeating("Damage", 1.0f, 1f);
     }
 
     void Damage()
     {
-        if (IsDamage == true)
+        if (IsDamageLava == true)
         {
             GameLogicScript.health--;
         }
@@ -25,11 +25,11 @@ public class LavaDamagePlayer : MonoBehaviour
         switch (col.tag)
         {
             case "Player":
-                IsDamage = true;
+                IsDamageLava = true;
                 break;
 
             default:
-                IsDamage = false;
+                IsDamageLava = false;
                 break;
         }
 

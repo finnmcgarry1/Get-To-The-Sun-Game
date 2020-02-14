@@ -8,7 +8,7 @@ public class DamagePlayer : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("Damage", 2.0f, 1f);
+        InvokeRepeating("Damage", 1f, 1f);
     }
 
     void Damage()
@@ -21,16 +21,13 @@ public class DamagePlayer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        
         switch (col.tag)
         {
             case "Player":
                 IsDamage = true;
                 break;
 
-            default:
-                IsDamage = false;
-                break;
+            
         }
     }
 }

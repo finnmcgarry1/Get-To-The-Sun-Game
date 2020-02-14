@@ -16,10 +16,6 @@ public class EnemyMovement : MonoBehaviour
     Rigidbody2D rigid2d;
 
     public Animator animator;
-
-
-    CircleCollider2D col;
-    bool IsAttack = false;
     
 
     // Update is called once per frame
@@ -27,7 +23,7 @@ public class EnemyMovement : MonoBehaviour
     {
         rigid2d = GetComponent<Rigidbody2D>();
     }
-    
+
     void Update()
     {
         //distance to the player
@@ -36,31 +32,17 @@ public class EnemyMovement : MonoBehaviour
 
         animator.SetFloat("Speed", speed);
 
-        if(distancePlayer < agroRange)
+        if (distancePlayer < agroRange)
         {
             //chase code
             ChasePlayer();
         }
-        else if(distancePlayer > agroRange)
+        else if (distancePlayer > agroRange)
         {
             //stop chasing player
             EndChasePlayer();
         }
-        else if((distancePlayer <= 1))
-        {
-            AttackPlayer();
-        }
 
-        if(IsAttack == true)
-        {
-            OnTriggerEnter2D(col);
-        }
-       
-    }
-
-    void AttackPlayer()
-    {
-        
     }
 
     void ChasePlayer()
@@ -86,10 +68,8 @@ public class EnemyMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        IsAttack = true;
         switch (col.tag)
         {
-
             case "Ground":
                 rigid2d.AddForce(Vector2.up * 350f);
                 break;
