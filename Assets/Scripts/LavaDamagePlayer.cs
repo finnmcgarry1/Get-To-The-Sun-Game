@@ -19,19 +19,21 @@ public class LavaDamagePlayer : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
 
-        switch (col.tag)
+        if (col.collider.tag == "Player")
         {
-            case "Player":
-                IsDamageLava = true;
-                break;
-
-            default:
-                IsDamageLava = false;
-                break;
+            IsDamage = true;
         }
 
+    }
+
+    private void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.collider.tag == "Player")
+        {
+            IsDamage = false;
+        }
     }
 }

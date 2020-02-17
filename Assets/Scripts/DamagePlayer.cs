@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamagePlayer : MonoBehaviour
 {
-    bool IsDamage = false;
+    public bool IsDamage = false;
 
     private void Start()
     {
@@ -19,15 +19,21 @@ public class DamagePlayer : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        switch (col.tag)
+        
+        if(col.collider.tag == "Player")
         {
-            case "Player":
-                IsDamage = true;
-                break;
+            IsDamage = true;
+        }
 
-            
+    }
+
+    private void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.collider.tag == "Player")
+        {
+            IsDamage = false;
         }
     }
 }
