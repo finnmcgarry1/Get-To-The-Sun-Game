@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameLogicScript : MonoBehaviour
 {
-    public GameObject fheart1, fheart2, fheart3, hheart1, hheart2, hheart3, eheart1, eheart2, eheart3, dead;
+    public GameObject fheart1, fheart2, fheart3, hheart1, hheart2, hheart3, eheart1, eheart2, eheart3; //dead;
     public static int health;
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class GameLogicScript : MonoBehaviour
         eheart1.gameObject.SetActive(false);
         eheart2.gameObject.SetActive(false);
         eheart3.gameObject.SetActive(false);
-        dead.gameObject.SetActive(false);
+        //dead.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -114,8 +114,8 @@ public class GameLogicScript : MonoBehaviour
                 eheart1.gameObject.SetActive(true);
                 eheart2.gameObject.SetActive(true);
                 eheart3.gameObject.SetActive(true);
-                dead.gameObject.SetActive(true);
-                Destroy(gameObject);
+                //dead.gameObject.SetActive(true);
+                //Destroy(gameObject);
                 break;
         }
     }

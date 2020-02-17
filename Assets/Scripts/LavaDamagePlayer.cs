@@ -31,7 +31,7 @@ public class LavaDamagePlayer : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D col)
     {
-        if (col.collider.tag == "Player")
+        if (col.collider.tag == "Untagged")
         {
             IsDamageLava = false;
         }

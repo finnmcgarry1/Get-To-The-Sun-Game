@@ -6829,7 +6829,6 @@ MonoBehaviour:
   eheart1: {fileID: 1234812061}
   eheart2: {fileID: 1211520399}
   eheart3: {fileID: 826453976}
-  dead: {fileID: 0}
 --- !u!50 &1427681177
 Rigidbody2D:
   serializedVersion: 4
@@ -6864,7 +6863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1427681181}
-  startTimeBtwAttack: 0
+  startTimeBtwAttack: 0.6
   onlyEnemies:
     serializedVersion: 2
     m_Bits: 256

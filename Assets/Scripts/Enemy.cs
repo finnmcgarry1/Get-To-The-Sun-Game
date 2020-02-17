@@ -45,6 +45,7 @@ public class Enemy : MonoBehaviour
                 fbar.gameObject.SetActive(false);
                 hbar.gameObject.SetActive(false);
                 ebar.gameObject.SetActive(true);
+
                 break;
         }
     }
