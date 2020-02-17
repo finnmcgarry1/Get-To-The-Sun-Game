@@ -4,15 +4,36 @@ using UnityEngine;
 
 public class DamageEnemy : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D col)
+    private Rigidbody2D rb2d;
+    public int health = 10;
+    public float knockbackForce = 2f;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        switch (col.tag)
+        rb2d = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (health <= 0)
         {
-            case "Enemy":
-
-                EnemyHealth.health--;
-                break;
+            Debug.Log(this.gameObject.name + " died");
+            Destroy(gameObject);
         }
+    }
 
+    public void takeDamage(int damage)
+    {
+        //knockbackEnemy();
+        health -= damage;
+        Debug.Log("Damage taken: -" + damage + " health");
+    }
+
+    void knockbackEnemy()
+    {
+        //knock enemy back towards the right
+        rb2d.velocity = new Vector2(knockbackForce, rb2d.velocity.y);
     }
 }

@@ -333,7 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 223103718}
   - component: {fileID: 223103717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: nohealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 481038894}
   - component: {fileID: 481038895}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fullhealth (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1111,7 +1111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 713996686}
   - component: {fileID: 713996685}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6783,7 +6783,7 @@ GameObject:
   - component: {fileID: 1427681176}
   m_Layer: 0
   m_Name: Explorer_grass
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6863,7 +6863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5936ef2d8e593c94da29eb3123f6a999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1427681181}
   startTimeBtwAttack: 0
   onlyEnemies:
     serializedVersion: 2
@@ -6902,7 +6902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c08848c39a0533e488862399fd262340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1427681181}
   moveSpeed: 4
   jumpForce: 10
   isGrounded: 0
@@ -7154,7 +7154,7 @@ GameObject:
   - component: {fileID: 1574763449}
   - component: {fileID: 1574763450}
   - component: {fileID: 1574763451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Snail
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -7454,7 +7454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2016714433}
   - component: {fileID: 2016714434}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: halfhealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7615,7 +7615,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2056584953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LifeBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
