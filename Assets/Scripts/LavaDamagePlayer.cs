@@ -24,7 +24,7 @@ public class LavaDamagePlayer : MonoBehaviour
 
         if (col.collider.tag == "Player")
         {
-            IsDamage = true;
+            IsDamageLava = true;
         }
 
     }
@@ -33,7 +33,7 @@ public class LavaDamagePlayer : MonoBehaviour
     {
         if (col.collider.tag == "Player")
         {
-            IsDamage = false;
+            IsDamageLava = false;
         }
     }
 }
