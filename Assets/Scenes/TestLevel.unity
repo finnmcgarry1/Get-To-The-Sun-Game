@@ -7150,10 +7150,11 @@ GameObject:
   - component: {fileID: 1574763446}
   - component: {fileID: 1574763445}
   - component: {fileID: 1574763443}
+  - component: {fileID: 1574763451}
   - component: {fileID: 1574763444}
   - component: {fileID: 1574763449}
   - component: {fileID: 1574763450}
-  - component: {fileID: 1574763451}
+  - component: {fileID: 1574763452}
   m_Layer: 8
   m_Name: Snail
   m_TagString: Enemy
@@ -7335,11 +7336,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574763442}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948fdbe98a062c5489b83e2d7bc1fb53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fbar: {fileID: 481038893}
+  hbar: {fileID: 2016714432}
+  ebar: {fileID: 223103716}
+--- !u!114 &1574763452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574763442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36cfa51e27a7391469e3a79b225749cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackForce: 2
   fbar: {fileID: 481038893}
   hbar: {fileID: 2016714432}
   ebar: {fileID: 223103716}

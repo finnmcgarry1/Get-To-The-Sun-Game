@@ -2,27 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class EnemyHealthBar : MonoBehaviour
 {
-    private Rigidbody2D rb2d;
-    public float knockbackForce = 2f;
     public GameObject fbar, hbar, ebar;
     public static int health;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
-        health = 2;
+        health = 3;
         fbar.gameObject.SetActive(true);
         hbar.gameObject.SetActive(false);
         ebar.gameObject.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       
         if (health > 2)
         {
             health = 2;
@@ -47,18 +44,5 @@ public class Enemy : MonoBehaviour
                 ebar.gameObject.SetActive(true);
                 break;
         }
-    }
-
-    public void takeDamage(int damage)
-    {
-        knockbackEnemy();
-        health -= damage;
-        Debug.Log("Damage taken: -" + damage + " health");
-    }
-    
-    void knockbackEnemy()
-    {
-        //knock enemy back towards the right
-        rb2d.velocity = new Vector2(knockbackForce, rb2d.velocity.y);
     }
 }
