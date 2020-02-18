@@ -15,7 +15,7 @@ public class Attack : MonoBehaviour
 
     public float attackRangeX;
     public float attackRangeY;
-    public int damage;
+    public float damage = 0.1f;
 
     public bool facingRight = true;
 

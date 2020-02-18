@@ -6,12 +6,13 @@ public class Enemy : MonoBehaviour
 {
     private Rigidbody2D rb2d;
     public float knockbackForce = 2f;
+    public static float healthAmount;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        EnemyHealthBar.health = 2;
+        healthAmount = 0.5f;
     }
 
     // Update is called once per frame
@@ -21,10 +22,17 @@ public class Enemy : MonoBehaviour
        
     }
 
-    public void takeDamage(int damage)
+    public void takeDamage(float damage)
     {
         //knockbackEnemy();
-        EnemyHealthBar.health -= damage;
+        if(healthAmount > 0)
+        {
+            healthAmount -= damage;
+        }
+        else if(healthAmount < 0)
+        {
+            healthAmount = 0;
+        }
         Debug.Log("Damage taken: -" + damage + " health");
     }
     
