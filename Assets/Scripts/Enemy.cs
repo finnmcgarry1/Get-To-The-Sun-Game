@@ -42,17 +42,17 @@ public class Enemy : MonoBehaviour
                 ebar.gameObject.SetActive(false);
                 break;
             case 0:
+                Debug.Log(this.gameObject.name + "died");
                 fbar.gameObject.SetActive(false);
                 hbar.gameObject.SetActive(false);
                 ebar.gameObject.SetActive(true);
-
                 break;
         }
     }
 
     public void takeDamage(int damage)
     {
-        knockbackEnemy();
+        //knockbackEnemy();
         health -= damage;
         Debug.Log("Damage taken: -" + damage + " health");
     }
