@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class LavaDamagePlayer : MonoBehaviour
 {
-    bool IsDamageLava = false;
+    public bool IsDamage = false;
 
     private void Start()
     {
-        InvokeRepeating("Damage", 1.0f, 1f);
+        InvokeRepeating("Damage", 0f, 1f);
     }
 
     void Damage()
     {
-        if (IsDamageLava == true)
+        if (IsDamage == true)
         {
             GameLogicScript.health--;
         }
@@ -24,16 +24,16 @@ public class LavaDamagePlayer : MonoBehaviour
 
         if (col.collider.tag == "Player")
         {
-            IsDamageLava = true;
+            IsDamage = true;
         }
 
     }
 
     private void OnCollisionExit2D(Collision2D col)
     {
-        if (col.collider.tag == "Untagged")
+        if (col.collider.tag == "Player")
         {
-            IsDamageLava = false;
+            IsDamage = false;
         }
     }
 }
