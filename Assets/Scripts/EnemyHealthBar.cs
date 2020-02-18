@@ -10,7 +10,6 @@ public class EnemyHealthBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = 3;
         fbar.gameObject.SetActive(true);
         hbar.gameObject.SetActive(false);
         ebar.gameObject.SetActive(false);
