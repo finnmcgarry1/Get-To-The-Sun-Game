@@ -15,7 +15,7 @@ public class Attack : MonoBehaviour
 
     public float attackRangeX;
     public float attackRangeY;
-    public float damage = 0.1f;
+    //public float damage = 0.1f;
 
     public bool facingRight = true;
 
@@ -45,7 +45,7 @@ public class Attack : MonoBehaviour
                 {
                     if (facingRight == false)
                     {
-                        damageEnemiesL[i].GetComponent<Enemy>().takeDamage(damage);
+                        damageEnemiesL[i].GetComponent<DamageEnemyTest>().takeDamage();
                     }
                 }   
 
@@ -53,7 +53,7 @@ public class Attack : MonoBehaviour
                 {
                     if (facingRight == true)
                     {
-                        damageEnemiesR[i].GetComponent<Enemy>().takeDamage(damage);
+                        damageEnemiesR[i].GetComponent<DamageEnemyTest>().takeDamage();
                     }
                 }
 

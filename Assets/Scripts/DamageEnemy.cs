@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class DamageEnemy : MonoBehaviour
 {
     private Rigidbody2D rb2d;
     public float knockbackForce = 2f;
