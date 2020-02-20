@@ -6800,8 +6800,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e21b48edbe16da4aa10d5c801ee6112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 1022864480}
+  health: {fileID: 0}
   healthDesc: {fileID: 592389177}
+  hideHUDtime: 0
 --- !u!114 &1829195963
 MonoBehaviour:
   m_ObjectHideFlags: 0
