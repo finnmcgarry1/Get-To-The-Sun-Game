@@ -8,8 +8,6 @@ public class EnemyHealthUIManager : MonoBehaviour
     public Slider health;
     public Text healthDesc;
 
-    public float hideHUDtime;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +16,6 @@ public class EnemyHealthUIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hideHUDtime += Time.deltaTime;
-
         if(health.value <= 0)
         {
             health.enabled = false;

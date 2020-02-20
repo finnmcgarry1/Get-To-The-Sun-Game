@@ -65,5 +65,6 @@ public class DamageEnemyTest : MonoBehaviour
     {
         Debug.Log(this.gameObject.name + " died");
         this.gameObject.SetActive(false);
+        GameScore.AddScore((int)maxHealth * 10);
     }
 }
