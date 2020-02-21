@@ -17,7 +17,7 @@ public class Attack : MonoBehaviour
     public float attackRangeY;
     //public float damage = 0.1f;
 
-    public bool facingRight = true;
+    public static bool facingRight = true;
 
     // Update is called once per frame
     void Update()
@@ -64,14 +64,8 @@ public class Attack : MonoBehaviour
         else
         {
             timeBtwAttack -= Time.deltaTime;
-            //Invoke("stopAttack", 0.2f);
             animator.SetBool("Attack", false);
         }
-    }
-
-    void stopAttack()
-    {
-        animator.SetBool("Attack", false);
     }
 
     void OnDrawGizmosSelected()

@@ -6,7 +6,13 @@ using UnityEngine.UI;
 public class DamageEnemyTest : MonoBehaviour
 {
     private Rigidbody2D rb2d;
-    public float knockbackForce = 2f;
+    EnemyMovement enemyMovementScript;
+    public Animator animator;
+
+    public float knockbackForce;
+    public float knockbackTime;
+    public float knockbackCount;
+
     public float maxHealth;
     public float currentHealth;
     public float damageTaken;
@@ -16,6 +22,8 @@ public class DamageEnemyTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+        enemyMovementScript = GetComponent<EnemyMovement>();
         rb2d = GetComponent<Rigidbody2D>();
 
         maxHealth = 10f;
@@ -29,13 +37,13 @@ public class DamageEnemyTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-       
+        
     }
 
     public void takeDamage()
     {
-        //knockbackEnemy();
+        enemyMovementScript.enabled = false;
+        knockbackEnemy();
         currentHealth -= damageTaken;
         healthBar.value = calculateHealth();
         if(currentHealth <= 0)
@@ -52,13 +60,32 @@ public class DamageEnemyTest : MonoBehaviour
     
     void knockbackEnemy()
     {
-        //knock enemy back towards the right
-        rb2d.velocity = new Vector2(knockbackForce, rb2d.velocity.y);
+        if(Attack.facingRight == true)
+        {
+            //knock enemy back towards the right
+            rb2d.velocity = new Vector2(knockbackForce, knockbackForce/2);
+        }
+        
+        if(Attack.facingRight == false)
+        {
+            //knock enemy back towards the left
+            rb2d.velocity = new Vector2(-knockbackForce, knockbackForce/2);
+        }
+
+        animator.SetFloat("Speed", 0f);
+        StartCoroutine(stunEnemy());
     }
 
     float calculateHealth()
     {
         return currentHealth / maxHealth;
+    }
+
+    private IEnumerator stunEnemy()
+    {
+        yield return new WaitForSeconds(knockbackTime);
+
+        enemyMovementScript.enabled = true;
     }
 
     void Die()

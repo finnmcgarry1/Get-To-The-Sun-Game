@@ -237,10 +237,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af7ff784ac8cc540b59eea5269f868a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockbackForce: 2
-  maxHealth: 6
-  currentHealth: 10
-  damageTaken: 2
+  knockbackForce: 3
+  knockbackTime: 1
+  knockbackCount: 0
+  maxHealth: 0
+  currentHealth: 0
+  damageTaken: 0
   healthBar: {fileID: 1022864480}
 --- !u!70 &68772598
 CapsuleCollider2D:
@@ -357,7 +359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1098801346}
   agroRange: 5
-  speed: 2
+  speed: 3
   animator: {fileID: 68772603}
 --- !u!95 &68772603
 Animator:
@@ -1810,7 +1812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1098801346}
-  agroRange: 5
+  agroRange: 10
   speed: 2
   animator: {fileID: 788052321}
 --- !u!95 &788052321
@@ -1882,6 +1884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackForce: 2
+  knockbackTime: 0.5
+  knockbackCount: 0
   maxHealth: 0
   currentHealth: 0
   damageTaken: 0
@@ -3047,7 +3051,6 @@ MonoBehaviour:
   attackPosR: {fileID: 416841262}
   attackRangeX: 0.85
   attackRangeY: 1.7
-  facingRight: 1
 --- !u!1 &1112356649
 GameObject:
   m_ObjectHideFlags: 0
