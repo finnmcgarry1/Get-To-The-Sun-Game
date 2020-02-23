@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 68772602}
   - component: {fileID: 68772597}
   - component: {fileID: 68772604}
+  - component: {fileID: 68772605}
   m_Layer: 9
   m_Name: Ghost
   m_TagString: Enemy
@@ -237,6 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af7ff784ac8cc540b59eea5269f868a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   knockbackForce: 3
   knockbackTime: 1
   knockbackCount: 0
@@ -393,6 +395,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDamage: 0
+  knockbackForce: 5
+  playerPos: {fileID: 1098801346}
+  playerObj: {fileID: 0}
+--- !u!58 &68772605
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68772596}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.21070099
 --- !u!1 &112341609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,6 +1904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af7ff784ac8cc540b59eea5269f868a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   knockbackForce: 2
   knockbackTime: 0.5
   knockbackCount: 0
@@ -1967,6 +1989,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDamage: 0
+  knockbackForce: 0
+  playerPos: {fileID: 0}
+  playerObj: {fileID: 0}
 --- !u!1 &801800817
 GameObject:
   m_ObjectHideFlags: 0
@@ -2861,8 +2886,9 @@ GameObject:
   - component: {fileID: 1098801351}
   - component: {fileID: 1098801344}
   - component: {fileID: 1098801347}
+  - component: {fileID: 1098801352}
   m_Layer: 0
-  m_Name: Explorer_grass
+  m_Name: Explorer
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3051,6 +3077,19 @@ MonoBehaviour:
   attackPosR: {fileID: 416841262}
   attackRangeX: 0.85
   attackRangeY: 1.7
+--- !u!114 &1098801352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098801343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a69b9785163f0d446beb176c2bade27f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackForce: 10
 --- !u!1 &1112356649
 GameObject:
   m_ObjectHideFlags: 0
