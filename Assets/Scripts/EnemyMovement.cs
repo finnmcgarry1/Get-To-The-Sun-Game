@@ -66,13 +66,16 @@ public class EnemyMovement : MonoBehaviour
         rigid2d.velocity = new Vector2(0, 0);
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        switch (col.tag)
+
+        if (col.collider.tag == "Jump")
         {
-            case "Ground":
-                rigid2d.AddForce(Vector2.up * 350f);
-                break;
+            rigid2d.AddForce(Vector2.up * 500f);
         }
+
     }
+
+    
+
 }
