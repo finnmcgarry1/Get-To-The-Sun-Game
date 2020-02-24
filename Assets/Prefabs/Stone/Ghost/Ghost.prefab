@@ -172,13 +172,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af7ff784ac8cc540b59eea5269f868a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 4755761473035518215}
   knockbackForce: 3
   knockbackTime: 1
   knockbackCount: 0
-  maxHealth: 0
+  maxHealth: 3
   currentHealth: 0
-  damageTaken: 0
+  damageTaken: 1
   healthBar: {fileID: 0}
 --- !u!114 &4755761473035518208
 MonoBehaviour:
