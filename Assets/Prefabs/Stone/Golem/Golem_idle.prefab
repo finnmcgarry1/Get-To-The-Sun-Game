@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7725816753780297981}
   - component: {fileID: 7725816753780297980}
   - component: {fileID: 7725816753780297983}
-  - component: {fileID: -7027273186359662190}
   - component: {fileID: 2103307945}
   m_Layer: 8
   m_Name: Golem_idle
@@ -163,19 +162,6 @@ MonoBehaviour:
   agroRange: 6
   speed: 2
   animator: {fileID: 7725816753780297981}
---- !u!114 &-7027273186359662190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7725816753780297982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27a65a7e2d432b6409fa29ff81bbc5ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsDamage: 0
 --- !u!70 &2103307945
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
