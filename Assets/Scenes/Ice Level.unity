@@ -18244,7 +18244,6 @@ GameObject:
   - component: {fileID: 1705200739}
   - component: {fileID: 1705200738}
   - component: {fileID: 1705200737}
-  - component: {fileID: 1705200743}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -18378,26 +18377,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 55
   m_TargetDisplay: 0
---- !u!114 &1705200743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1705200735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8af7ff784ac8cc540b59eea5269f868a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  knockbackForce: 0
-  knockbackTime: 0
-  knockbackCount: 0
-  maxHealth: 0
-  currentHealth: 0
-  damageTaken: 0
-  healthBar: {fileID: 0}
 --- !u!1 &1715821542
 GameObject:
   m_ObjectHideFlags: 0
@@ -18718,9 +18697,9 @@ GameObject:
   - component: {fileID: 2112583034}
   - component: {fileID: 2112583033}
   - component: {fileID: 2112583032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ice Boss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18751,8 +18730,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.055877686, y: -0.1277206}
-  m_Size: {x: 2.4366703, y: 3.1550975}
+  m_Offset: {x: 0.1167531, y: 0.030553102}
+  m_Size: {x: 3.629815, y: 3.629815}
   m_Direction: 0
 --- !u!114 &2112583034
 MonoBehaviour:
@@ -18805,9 +18784,9 @@ MonoBehaviour:
   knockbackForce: 1
   knockbackTime: 0.5
   knockbackCount: 0
-  maxHealth: 10
+  maxHealth: 5
   currentHealth: 0
-  damageTaken: 1
+  damageTaken: 2
   healthBar: {fileID: 759615615}
 --- !u!50 &2112583037
 Rigidbody2D:
