@@ -5449,6 +5449,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5016455656416908552, guid: 01323362e4fba0b46b4072c436597c7f,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.11418724
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016455656416908552, guid: 01323362e4fba0b46b4072c436597c7f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.2283745
+      objectReference: {fileID: 0}
     - target: {fileID: 5016455656416908554, guid: 01323362e4fba0b46b4072c436597c7f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5507,7 +5517,7 @@ PrefabInstance:
     - target: {fileID: 5016455656416908555, guid: 01323362e4fba0b46b4072c436597c7f,
         type: 3}
       propertyPath: m_FlipX
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016455656416908556, guid: 01323362e4fba0b46b4072c436597c7f,
         type: 3}
@@ -34796,7 +34806,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.53619766, y: -1.1528287}
+  m_Offset: {x: 0.53619766, y: -1.1903472}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -34807,7 +34817,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4730453, y: 3.3121963}
+  m_Size: {x: 3.4730453, y: 3.3872333}
   m_EdgeRadius: 0
 --- !u!1 &1785105556
 GameObject:
@@ -35997,7 +36007,7 @@ PrefabInstance:
     - target: {fileID: 1032235537876558371, guid: 938c307b8269f364fa1f54c2199286b0,
         type: 3}
       propertyPath: agroRange
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1032235537876558371, guid: 938c307b8269f364fa1f54c2199286b0,
         type: 3}
@@ -36135,12 +36145,12 @@ PrefabInstance:
     - target: {fileID: 4597971239314014254, guid: de231b0a1913ff84ebb1de5e8ee1939f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 85.99
+      value: 25.09
       objectReference: {fileID: 0}
     - target: {fileID: 4597971239314014254, guid: de231b0a1913ff84ebb1de5e8ee1939f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.02
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 4597971239314014254, guid: de231b0a1913ff84ebb1de5e8ee1939f,
         type: 3}
@@ -36299,7 +36309,7 @@ PrefabInstance:
     - target: {fileID: 5016455656416908555, guid: 01323362e4fba0b46b4072c436597c7f,
         type: 3}
       propertyPath: m_FlipX
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016455656416908556, guid: 01323362e4fba0b46b4072c436597c7f,
         type: 3}
