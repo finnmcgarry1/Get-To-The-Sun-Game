@@ -17372,6 +17372,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Explorer
       objectReference: {fileID: 0}
+    - target: {fileID: 1574752610906582478, guid: 5095a6aabf963934083fc7c674ea2896,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5095a6aabf963934083fc7c674ea2896, type: 3}
 --- !u!1001 &5144329336203892230

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8731088475674207908}
   - component: {fileID: 8731088475674207905}
   - component: {fileID: 1031028516578880004}
+  - component: {fileID: 1315624711}
   m_Layer: 8
   m_Name: Green turtle
   m_TagString: Enemy
@@ -99,9 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecd4627b65120d46b100560e80322d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 128831063518132443, guid: daf38aaa232218546ad4fe40c29f0049, type: 3}
-  agroRange: 7.78
-  speed: 2.96
+  player: {fileID: 0}
+  agroRange: 10
+  speed: 2
   animator: {fileID: 8731088475674207912}
 --- !u!95 &8731088475674207912
 Animator:
@@ -145,13 +146,13 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8731088475674207913}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1, y: 0.3}
+  m_Offset: {x: 1, y: 0.3}
   serializedVersion: 2
   m_Radius: 0.16591871
 --- !u!50 &8731088475674207905
@@ -191,7 +192,20 @@ MonoBehaviour:
   knockbackForce: 2.5
   knockbackTime: 1
   knockbackCount: 0
-  maxHealth: 4
+  maxHealth: 15
   currentHealth: 0
-  damageTaken: 0
+  damageTaken: 5
   healthBar: {fileID: 0}
+--- !u!114 &1315624711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8731088475674207913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a65a7e2d432b6409fa29ff81bbc5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsDamage: 0

@@ -107,7 +107,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &7725816753780297981
 Animator:
   serializedVersion: 3
@@ -118,7 +118,7 @@ Animator:
   m_GameObject: {fileID: 7725816753780297982}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86ac5b5f89fe459419b0ab4416ba4b1f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -140,8 +140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 7725816753780297981}
-  knockbackForce: 1
-  knockbackTime: 0.5
+  knockbackForce: 2
+  knockbackTime: 1
   knockbackCount: 0
   maxHealth: 10
   currentHealth: 0
