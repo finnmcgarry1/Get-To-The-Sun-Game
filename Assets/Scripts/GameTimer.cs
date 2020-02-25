@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GameTimer : MonoBehaviour
 {
     public Text gameTimerText;
-    float gameTimer = 0f;
+    public static float gameTimer;
 
     // Update is called once per frame
     void Update()

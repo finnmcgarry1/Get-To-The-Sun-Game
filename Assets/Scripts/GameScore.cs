@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameScore : MonoBehaviour
 {
     public Text gameScoreText;
-    public static int gameScore = 0;
+    public static int gameScore;
 
     // Update is called once per frame
     void Update()
