@@ -45,8 +45,7 @@ public class DamageEnemyTest : MonoBehaviour
         knockbackEnemy();
         currentHealth -= damageTaken;
         healthBar.value = calculateHealth();
-        FindObjectOfType<AudioManager>().Play("EnemyHit");
-        if (currentHealth <= 0)
+        if(currentHealth <= 0)
         {
             Die();
         }
@@ -91,10 +90,7 @@ public class DamageEnemyTest : MonoBehaviour
     void Die()
     {
         Debug.Log(this.gameObject.name + " died");
-
-        FindObjectOfType<AudioManager>().Play("EnemyDeath");
         this.gameObject.SetActive(false);
         GameScore.AddScore((int)maxHealth * 10);
-
     }
 }
