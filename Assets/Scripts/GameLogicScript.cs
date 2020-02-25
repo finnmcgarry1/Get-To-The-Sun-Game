@@ -30,6 +30,10 @@ public class GameLogicScript : MonoBehaviour
         {
             health = 6;
         }
+        if(health < 0)
+        {
+            health = 0;
+        }
 
         switch (health)
         {

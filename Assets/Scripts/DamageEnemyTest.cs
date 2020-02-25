@@ -26,12 +26,11 @@ public class DamageEnemyTest : MonoBehaviour
         enemyMovementScript = GetComponent<EnemyMovement>();
         rb2d = GetComponent<Rigidbody2D>();
 
-        maxHealth = 12f;
         currentHealth = maxHealth;
 
         healthBar.value = calculateHealth();
 
-        damageTaken = 2f;
+
     }
 
     // Update is called once per frame

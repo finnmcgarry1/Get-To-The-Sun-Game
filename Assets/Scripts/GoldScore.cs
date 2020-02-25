@@ -9,7 +9,7 @@ public class GoldScore : MonoBehaviour
 
         if (col.collider.tag == "Player")
         {
-            GameScore.AddScore(100);
+            GameScore.AddScore(50);
             this.gameObject.SetActive(false);
         }
 

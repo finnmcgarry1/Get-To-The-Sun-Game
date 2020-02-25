@@ -9,7 +9,7 @@ public class GemScore : MonoBehaviour
 
         if (col.collider.tag == "Player")
         {
-            GameScore.AddScore(1000);
+            GameScore.AddScore(500);
             this.gameObject.SetActive(false);
         }
 
