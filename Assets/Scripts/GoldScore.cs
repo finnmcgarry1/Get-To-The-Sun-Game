@@ -11,6 +11,7 @@ public class GoldScore : MonoBehaviour
         {
             GameScore.AddScore(50);
             this.gameObject.SetActive(false);
+            FindObjectOfType<AudioManager>().Play("Gold");
         }
 
     }
