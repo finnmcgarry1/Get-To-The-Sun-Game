@@ -71,7 +71,6 @@ public class DamageEnemyTest : MonoBehaviour
             rb2d.velocity = new Vector2(-knockbackForce, knockbackForce/2);
         }
 
-        animator.SetFloat("Speed", 0f);
         StartCoroutine(stunEnemy());
     }
 

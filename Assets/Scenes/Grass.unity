@@ -43296,8 +43296,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3214545082533463816, guid: 8db16c1ce4aaf324fbc3260dde95e061, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8db16c1ce4aaf324fbc3260dde95e061, type: 3}
+--- !u!1 &1071406954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3214545082533463819, guid: 8db16c1ce4aaf324fbc3260dde95e061,
+    type: 3}
+  m_PrefabInstance: {fileID: 1071406953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1071406955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071406954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe9d576463f76e4ab25ed3ad4f2544c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1075933167
 PrefabInstance:
   m_ObjectHideFlags: 0
