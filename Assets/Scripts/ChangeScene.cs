@@ -11,6 +11,7 @@ public class ChangeScene : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other){
         
         if(other.collider.tag == "Player"){
+            GameScore.setLevelScore();
             //Load levels by index
             SceneManager.LoadScene(index);
 

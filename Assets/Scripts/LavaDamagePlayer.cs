@@ -16,6 +16,7 @@ public class LavaDamagePlayer : MonoBehaviour
         if (IsDamage == true)
         {
             GameLogicScript.health--;
+            FindObjectOfType<AudioManager>().Play("Fire");
         }
     }
 

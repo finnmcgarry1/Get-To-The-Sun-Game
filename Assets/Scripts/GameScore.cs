@@ -7,6 +7,7 @@ public class GameScore : MonoBehaviour
 {
     public Text gameScoreText;
     public static int gameScore;
+    public static int levelScore;
 
     // Update is called once per frame
     void Update()
@@ -21,8 +22,17 @@ public class GameScore : MonoBehaviour
 
     public static void AddScore(int score)
     {
-        gameScore = gameScore + score; 
+        gameScore = gameScore + score;
+        levelScore = levelScore + score;
+    }
 
+    public static void setLevelScore()
+    {
+        levelScore = 0;
+    }
+    public static void SubScore()
+    {
+        gameScore = gameScore - levelScore;
     }
 
     public static void MinusScore(int score)
