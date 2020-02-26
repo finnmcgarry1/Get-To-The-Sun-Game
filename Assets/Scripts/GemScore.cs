@@ -11,6 +11,7 @@ public class GemScore : MonoBehaviour
         {
             GameScore.AddScore(500);
             this.gameObject.SetActive(false);
+            FindObjectOfType<AudioManager>().Play("Gem");
         }
 
     }

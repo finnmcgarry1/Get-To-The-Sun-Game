@@ -45,7 +45,8 @@ public class DamageEnemyTest : MonoBehaviour
         knockbackEnemy();
         currentHealth -= damageTaken;
         healthBar.value = calculateHealth();
-        if(currentHealth <= 0)
+        FindObjectOfType<AudioManager>().Play("EnemyHit");
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -71,6 +72,7 @@ public class DamageEnemyTest : MonoBehaviour
             rb2d.velocity = new Vector2(-knockbackForce, knockbackForce/2);
         }
 
+        animator.SetFloat("Speed", 0f);
         StartCoroutine(stunEnemy());
     }
 
@@ -89,7 +91,10 @@ public class DamageEnemyTest : MonoBehaviour
     void Die()
     {
         Debug.Log(this.gameObject.name + " died");
+
+        FindObjectOfType<AudioManager>().Play("EnemyDeath");
         this.gameObject.SetActive(false);
         GameScore.AddScore((int)maxHealth * 10);
+
     }
 }

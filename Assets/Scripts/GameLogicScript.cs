@@ -7,10 +7,6 @@ public class GameLogicScript : MonoBehaviour
     public GameObject fheart1, fheart2, fheart3, hheart1, hheart2, hheart3, eheart1, eheart2, eheart3; //dead;
     public static int health;
 
-    [SerializeField] private GameObject gameOverUI;
-
-    public static float gameTimer;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -122,17 +118,9 @@ public class GameLogicScript : MonoBehaviour
                 eheart1.gameObject.SetActive(true);
                 eheart2.gameObject.SetActive(true);
                 eheart3.gameObject.SetActive(true);
-                DeadPlayer();
                 //dead.gameObject.SetActive(true);
                 //Destroy(gameObject);
                 break;
         }
-    }
-
-    void DeadPlayer()
-    {
-        Time.timeScale = 0f;
-        AudioListener.pause = true;
-        gameOverUI.SetActive(true);
     }
 }
