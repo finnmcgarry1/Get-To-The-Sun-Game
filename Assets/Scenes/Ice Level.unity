@@ -336,8 +336,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1145709604}
-  agroRange: 8
-  speed: 3
+  agroRange: 4
+  speed: 2
   animator: {fileID: 27468843}
 --- !u!114 &27468841
 MonoBehaviour:
@@ -1805,8 +1805,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1145709604}
-  agroRange: 8
-  speed: 3
+  agroRange: 4
+  speed: 2
   animator: {fileID: 193672068}
 --- !u!114 &193672074
 MonoBehaviour:
@@ -2724,8 +2724,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1145709604}
-  agroRange: 8
-  speed: 3
+  agroRange: 4
+  speed: 2
   animator: {fileID: 343922921}
 --- !u!114 &343922919
 MonoBehaviour:
@@ -5045,8 +5045,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1145709604}
-  agroRange: 8
-  speed: 3
+  agroRange: 4
+  speed: 2
   animator: {fileID: 756657585}
 --- !u!114 &756657583
 MonoBehaviour:
@@ -6710,8 +6710,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1145709604}
-  agroRange: 8
-  speed: 3
+  agroRange: 4
+  speed: 2
   animator: {fileID: 1164515575}
 --- !u!114 &1164515573
 MonoBehaviour:
@@ -7675,8 +7675,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1145709604}
-  agroRange: 8
-  speed: 3
+  agroRange: 4
+  speed: 2
   animator: {fileID: 1291377838}
 --- !u!114 &1291377836
 MonoBehaviour:
@@ -41177,8 +41177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1145709604}
-  agroRange: 8
-  speed: 3
+  agroRange: 4
+  speed: 2
   animator: {fileID: 1432812840}
 --- !u!114 &1432812838
 MonoBehaviour:
@@ -42962,8 +42962,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1145709604}
-  agroRange: 8
-  speed: 3
+  agroRange: 4
+  speed: 2
   animator: {fileID: 1703320873}
 --- !u!114 &1703320871
 MonoBehaviour:
@@ -44057,8 +44057,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1145709604}
-  agroRange: 8
-  speed: 3
+  agroRange: 4
+  speed: 2
   animator: {fileID: 1883716504}
 --- !u!114 &1883716502
 MonoBehaviour:
@@ -45723,6 +45723,16 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 837293838}
+    - target: {fileID: 1574752610906582475, guid: 5095a6aabf963934083fc7c674ea2896,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574752610906582475, guid: 5095a6aabf963934083fc7c674ea2896,
+        type: 3}
+      propertyPath: jumpForce
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1574752610906582478, guid: 5095a6aabf963934083fc7c674ea2896,
         type: 3}
       propertyPath: m_Name
