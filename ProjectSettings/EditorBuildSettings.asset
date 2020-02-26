@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lava Level.unity
     guid: 2d5706814f873034ba5a696afe06e607
+  - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 05d413bc033c3434099bff2aa64686bd
   m_configObjects: {}
