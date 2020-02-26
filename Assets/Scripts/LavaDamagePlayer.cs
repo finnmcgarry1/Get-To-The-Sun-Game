@@ -8,7 +8,7 @@ public class LavaDamagePlayer : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("Damage", 0.1f, 0.1f);
+        InvokeRepeating("Damage", 0.1f, 0.5f);
     }
 
     void Damage()
