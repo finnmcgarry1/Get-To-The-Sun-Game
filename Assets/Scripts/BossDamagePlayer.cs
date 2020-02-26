@@ -15,7 +15,7 @@ public class BossDamagePlayer : MonoBehaviour
     {
         if (IsDamage == true)
         {
-            GameLogicScript.health -= 2;
+            GameLogicScript.health = GameLogicScript.health - 2;
         }
     }
 

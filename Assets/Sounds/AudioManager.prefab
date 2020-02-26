@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3214545082533463817}
-  - component: {fileID: 3214545082533463816}
+  - component: {fileID: 3214545083743994696}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -24,14 +24,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3214545082533463819}
-  m_LocalRotation: {x: -0, y: -0, z: 0.0140203945, w: 0.9999017}
+  m_LocalRotation: {x: 0, y: 0, z: 0.014023236, w: 0.9999017}
   m_LocalPosition: {x: 259.1531, y: 166.08246, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3214545082533463816
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.6070001}
+--- !u!114 &3214545083743994696
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,45 +44,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: EnemyDeath
+  - name: SwingSword
+    clip: {fileID: 8300000, guid: 437963daa7953cb488f122f073506939, type: 3}
+    volume: 0.275
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyHit
+    clip: {fileID: 8300000, guid: c2aad17694b477a458fdd658cd3c064e, type: 3}
+    volume: 0.275
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDie
     clip: {fileID: 8300000, guid: b890bcb4aec4f8041b1a634068bf97bd, type: 3}
-    volume: 0.095
+    volume: 0.275
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Gold
+    clip: {fileID: 8300000, guid: a887f663f3bc1e140a3a2bef12a7e246, type: 3}
+    volume: 0.275
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Gem
+    clip: {fileID: 8300000, guid: 4aaf749f5cb0bf24a9b400a965e6c2bf, type: 3}
+    volume: 0.275
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Heart
+    clip: {fileID: 8300000, guid: 7a6245b4dbce83948aa508283adaf2a0, type: 3}
+    volume: 0.275
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: ca69a86c3d69ca34f883286e81dc7cda, type: 3}
-    volume: 0.118
-    pitch: 0.99
+    volume: 0.275
+    pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: EnemyHit
-    clip: {fileID: 8300000, guid: c2aad17694b477a458fdd658cd3c064e, type: 3}
-    volume: 0.118
-    pitch: 0.99
+  - name: PlayerHit
+    clip: {fileID: 8300000, guid: 732d3a587c2571f4bb482de3b117b456, type: 3}
+    volume: 0.275
+    pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: SwingSword
-    clip: {fileID: 8300000, guid: 437963daa7953cb488f122f073506939, type: 3}
-    volume: 0.118
-    pitch: 0.99
-    loop: 0
-    source: {fileID: 0}
-  - name: Gold
-    clip: {fileID: 8300000, guid: a887f663f3bc1e140a3a2bef12a7e246, type: 3}
-    volume: 0.118
-    pitch: 0.99
-    loop: 0
-    source: {fileID: 0}
-  - name: Gem
-    clip: {fileID: 8300000, guid: 4aaf749f5cb0bf24a9b400a965e6c2bf, type: 3}
-    volume: 0.118
-    pitch: 0.99
-    loop: 0
-    source: {fileID: 0}
-  - name: Heart
-    clip: {fileID: 8300000, guid: 7a6245b4dbce83948aa508283adaf2a0, type: 3}
-    volume: 0.118
-    pitch: 0.99
+  - name: GameOver
+    clip: {fileID: 8300000, guid: f4bbd07ff8fcc1844babbb1beb3658da, type: 3}
+    volume: 0.275
+    pitch: 1
     loop: 0
     source: {fileID: 0}

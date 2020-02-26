@@ -17,9 +17,9 @@ public class HealPlayer : MonoBehaviour
             {
                 GameScore.AddScore(100);
             }
-            FindObjectOfType<AudioManager>().Play("Heart");
             this.gameObject.SetActive(false);
         }
+        FindObjectOfType<AudioManager>().Play("Heart");
 
     }
 }

@@ -60,7 +60,6 @@ public class Attack : MonoBehaviour
                 timeBtwAttack = startTimeBtwAttack;
                 animator.SetBool("Attack",true);
                 FindObjectOfType<AudioManager>().Play("SwingSword");
-
             }
         }
         else

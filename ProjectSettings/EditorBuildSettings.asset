@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Stone Level.unity
     guid: e7f311f76967f704fba3ba0c6349217d
   - enabled: 1
-    path: Assets/Scenes/Grass.unity
+    path: Assets/Scenes/Grass Level.unity
     guid: 9282c7b41efceb84fae999754bdbcdf0
   - enabled: 1
     path: Assets/Scenes/Ice Level.unity

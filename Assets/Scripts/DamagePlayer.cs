@@ -16,6 +16,7 @@ public class DamagePlayer : MonoBehaviour
         if (IsDamage == true)
         {
             GameLogicScript.health--;
+            FindObjectOfType<AudioManager>().Play("PlayerHit");
         }
     }
 
