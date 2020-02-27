@@ -8,7 +8,7 @@ public class TitleScreen : MonoBehaviour
     public void PlayGame()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("Ice Level");
+        SceneManager.LoadScene("BackStory");
     }
 
     public void QuitGame()

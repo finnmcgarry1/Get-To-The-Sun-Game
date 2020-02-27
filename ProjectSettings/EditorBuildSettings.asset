@@ -5,15 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Stone Level.unity
-    guid: e7f311f76967f704fba3ba0c6349217d
+    path: Assets/Scenes/StartScreen.unity
+    guid: 05d413bc033c3434099bff2aa64686bd
   - enabled: 1
-    path: Assets/Scenes/Grass Level.unity
-    guid: 9282c7b41efceb84fae999754bdbcdf0
+    path: Assets/Scenes/BackStory.unity
+    guid: c06f49dad4c1bd14a8af70f8c86fd09a
   - enabled: 1
     path: Assets/Scenes/Ice Level.unity
     guid: 96ca7ed36c605b847894cebdeab326b1
@@ -21,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Lava Level.unity
     guid: 2d5706814f873034ba5a696afe06e607
   - enabled: 1
-    path: Assets/Scenes/StartScreen.unity
-    guid: 05d413bc033c3434099bff2aa64686bd
+    path: Assets/Scenes/Stone Level.unity
+    guid: e7f311f76967f704fba3ba0c6349217d
+  - enabled: 1
+    path: Assets/Scenes/Grass Level.unity
+    guid: 9282c7b41efceb84fae999754bdbcdf0
   m_configObjects: {}
