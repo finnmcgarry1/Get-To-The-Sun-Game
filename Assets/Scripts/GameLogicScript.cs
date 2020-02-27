@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameLogicScript : MonoBehaviour
 {
@@ -134,5 +135,13 @@ public class GameLogicScript : MonoBehaviour
     {
         Time.timeScale = 0f;
         gameOverUI.SetActive(true);
+    }
+
+    public void restartGame()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        GameScore.SubScore();
+        GameScore.setLevelScore();
+        SceneManager.LoadScene(currentScene.name);
     }
 }
