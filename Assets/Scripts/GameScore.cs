@@ -40,6 +40,13 @@ public class GameScore : MonoBehaviour
         gameScore = gameScore - score;
     }
 
+    public static void resetScore()
+    {
+        gameScore = 0;
+        levelScore = 0;
+
+    }
+
     public static void EndPoints(int time)
     {
 
