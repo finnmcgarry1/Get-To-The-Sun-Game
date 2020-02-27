@@ -55,6 +55,8 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         Time.timeScale = 1;
+        GameScore.resetScore();
+        GameTimer.resetTimer();
         SceneManager.LoadScene("Ice Level");
     }
 }

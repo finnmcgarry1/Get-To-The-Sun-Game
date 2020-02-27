@@ -23,7 +23,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Grass Level.unity
     guid: 9282c7b41efceb84fae999754bdbcdf0
-  - enabled: 1
-    path: Assets/Scenes/GameCompleted.unity
-    guid: e2e58fdfeff754cb68fc0b9fe97261dd
   m_configObjects: {}

@@ -43,7 +43,6 @@ public class PauseGame : MonoBehaviour
 
     public void returnTitleScreen()
     {
-        GameScore.resetScore();
         Time.timeScale = 1;
         SceneManager.LoadScene("StartScreen");
     } 

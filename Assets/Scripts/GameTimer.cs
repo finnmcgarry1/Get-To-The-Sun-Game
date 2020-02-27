@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class GameTimer : MonoBehaviour
 {
     public Text gameTimerText;
-    public static float gameTimer;
+    public static float gameTimer = 0f;
+    public static float startTime = 0f;
 
     // Update is called once per frame
     void Update()
@@ -19,5 +20,10 @@ public class GameTimer : MonoBehaviour
         string timerString = string.Format("{0:0}:{1:00}:{2:00}", hours, minutes, seconds);
 
         gameTimerText.text = timerString;
+    }
+
+    public static void resetTimer()
+    {
+        gameTimer = startTime;
     }
 }
