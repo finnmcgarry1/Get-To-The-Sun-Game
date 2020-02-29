@@ -87,19 +87,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "Ground" || collision.collider.tag == "Enemy")
-        {
-            isGrounded = true;
-        }
-    }
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if (collision.collider.tag == "Ground" || collision.collider.tag == "Enemy")
+    //     {
+    //         isGrounded = true;
+    //     }
+    // }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "Ground" || collision.collider.tag == "Enemy")
-        {
-            isGrounded = false;
-        }
-    }
+    // private void OnCollisionExit2D(Collision2D collision)
+    // {
+    //     if (collision.collider.tag == "Ground" || collision.collider.tag == "Enemy")
+    //     {
+    //         isGrounded = false;
+    //     }
+    // }
 }

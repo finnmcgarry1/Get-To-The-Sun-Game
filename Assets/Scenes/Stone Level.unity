@@ -70431,6 +70431,7 @@ GameObject:
   - component: {fileID: 1053460778}
   - component: {fileID: 1053460780}
   - component: {fileID: 1053460779}
+  - component: {fileID: 1053460781}
   m_Layer: 0
   m_Name: GroundCheckPlayer
   m_TagString: Untagged
@@ -70446,7 +70447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053460777}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: -0.841, z: 0}
+  m_LocalPosition: {x: -0.027, y: -0.841, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1479049789}
@@ -70459,7 +70460,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053460777}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -70494,6 +70495,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.33486176, y: 2.1717048}
   m_EdgeRadius: 0
+--- !u!114 &1053460781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053460777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bc809354a959d4ba32062a822e43fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1063668158
 GameObject:
   m_ObjectHideFlags: 0
