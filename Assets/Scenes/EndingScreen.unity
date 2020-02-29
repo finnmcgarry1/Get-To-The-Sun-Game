@@ -1118,7 +1118,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Congrats you beat the game! You are the maze master! Try again and see
-    if you can beat your time and high score.
+    if you can beat your time or high score.
 --- !u!222 &2023850425
 CanvasRenderer:
   m_ObjectHideFlags: 0
