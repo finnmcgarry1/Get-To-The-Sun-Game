@@ -4,6 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     public Animator animator;
     private Rigidbody2D rb2d;
+    private static Rigidbody2D rigidbd2D;
     private SpriteRenderer spriteRenderer;
 
     public float moveSpeed = 4f;
@@ -16,6 +17,7 @@ public class PlayerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        rigidbd2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 }
 
@@ -87,19 +89,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // private void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     if (collision.collider.tag == "Ground" || collision.collider.tag == "Enemy")
-    //     {
-    //         isGrounded = true;
-    //     }
-    // }
-
-    // private void OnCollisionExit2D(Collision2D collision)
-    // {
-    //     if (collision.collider.tag == "Ground" || collision.collider.tag == "Enemy")
-    //     {
-    //         isGrounded = false;
-    //     }
-    // }
+    public static void freezePlayer()
+    {
+        rigidbd2D.constraints = RigidbodyConstraints2D.FreezeAll;
+    }
 }

@@ -134,6 +134,7 @@ public class GameLogicScript : MonoBehaviour
     void DeadPlayer()
     {
         Time.timeScale = 0f;
+        PlayerController.freezePlayer();
         gameOverUI.SetActive(true);
     }
 
