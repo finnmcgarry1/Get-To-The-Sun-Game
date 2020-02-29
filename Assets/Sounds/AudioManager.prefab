@@ -107,13 +107,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Menu Music
     clip: {fileID: 8300000, guid: 9b11bfa933b6e25468fb0231204242c0, type: 3}
-    volume: 0.132
+    volume: 0.1
     pitch: 0.98
     loop: 1
     source: {fileID: 0}
   - name: Portal
-    clip: {fileID: 8300000, guid: 2b7a2161ca09630468e51acfce225975, type: 3}
-    volume: 0.245
+    clip: {fileID: 8300000, guid: 419fa1dba9947ef40a6f0ca042f7f90b, type: 3}
+    volume: 0.275
     pitch: 1
     loop: 1
     source: {fileID: 0}

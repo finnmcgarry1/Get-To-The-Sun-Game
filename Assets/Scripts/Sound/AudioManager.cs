@@ -1,13 +1,13 @@
 ﻿using UnityEngine.Audio;
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
 
     public static AudioManager instance;
-    
 
     void Awake()
     {
@@ -34,7 +34,19 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        Play("Menu Music");
+        Scene scene = SceneManager.GetActiveScene();
+        
+        if(scene.name == "StartScreen" || scene.name == "BackStory")
+        {
+            Play("Menu Music");
+        }
+        else
+        {
+            Play("Theme");
+        }
+
+        
+        
     }
 
     public void Play (string name)
