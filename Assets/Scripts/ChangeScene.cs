@@ -11,13 +11,13 @@ public class ChangeScene : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other){
         
         if(other.collider.tag == "Player"){
-            FindObjectOfType<AudioManager>().Play("Portal");
             GameScore.setLevelScore();
             //Load levels by index
             SceneManager.LoadScene(index);
 
             //Load levels by LevelName
             SceneManager.LoadScene(LevelName);
+            FindObjectOfType<AudioManager>().Play("Portal");
 
         }
     }

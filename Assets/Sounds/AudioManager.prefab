@@ -107,8 +107,8 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Menu Music
     clip: {fileID: 8300000, guid: 9b11bfa933b6e25468fb0231204242c0, type: 3}
-    volume: 0.245
-    pitch: 1
+    volume: 0.132
+    pitch: 0.98
     loop: 1
     source: {fileID: 0}
   - name: Portal
