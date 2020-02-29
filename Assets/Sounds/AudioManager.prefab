@@ -111,6 +111,12 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: Portal
+    clip: {fileID: 8300000, guid: 2b7a2161ca09630468e51acfce225975, type: 3}
+    volume: 0.245
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!114 &57334048
 MonoBehaviour:
   m_ObjectHideFlags: 0

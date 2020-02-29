@@ -963,8 +963,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214545083743994696, guid: 8db16c1ce4aaf324fbc3260dde95e061,
         type: 3}
+      propertyPath: sounds.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214545083743994696, guid: 8db16c1ce4aaf324fbc3260dde95e061,
+        type: 3}
       propertyPath: sounds.Array.data[10].volume
       value: 0.317
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214545083743994696, guid: 8db16c1ce4aaf324fbc3260dde95e061,
+        type: 3}
+      propertyPath: sounds.Array.data[11].name
+      value: PortalSounds
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214545083743994696, guid: 8db16c1ce4aaf324fbc3260dde95e061,
+        type: 3}
+      propertyPath: sounds.Array.data[11].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9b11bfa933b6e25468fb0231204242c0, type: 3}
+    - target: {fileID: 3214545083743994696, guid: 8db16c1ce4aaf324fbc3260dde95e061,
+        type: 3}
+      propertyPath: sounds.Array.data[11].volume
+      value: 0.317
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214545083743994696, guid: 8db16c1ce4aaf324fbc3260dde95e061,
+        type: 3}
+      propertyPath: sounds.Array.data[11].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214545083743994696, guid: 8db16c1ce4aaf324fbc3260dde95e061,
+        type: 3}
+      propertyPath: sounds.Array.data[11].loop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8db16c1ce4aaf324fbc3260dde95e061, type: 3}
