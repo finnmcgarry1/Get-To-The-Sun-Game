@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -72405,7 +72405,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1479049781}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 17872a6853e61f9489a17c7e4a575c7f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -73025,12 +73025,12 @@ PrefabInstance:
     - target: {fileID: 4755761473035518212, guid: ed957f14d6ee6ec46ada6bd4d3a57dbd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 175.21
+      value: 177.71
       objectReference: {fileID: 0}
     - target: {fileID: 4755761473035518212, guid: ed957f14d6ee6ec46ada6bd4d3a57dbd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 113.1
+      value: 113.05
       objectReference: {fileID: 0}
     - target: {fileID: 4755761473035518212, guid: ed957f14d6ee6ec46ada6bd4d3a57dbd,
         type: 3}
@@ -73082,6 +73082,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1479049789}
+    - target: {fileID: 4755761473035518214, guid: ed957f14d6ee6ec46ada6bd4d3a57dbd,
+        type: 3}
+      propertyPath: agroRange
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4755761473035518216, guid: ed957f14d6ee6ec46ada6bd4d3a57dbd,
         type: 3}
       propertyPath: m_Name
