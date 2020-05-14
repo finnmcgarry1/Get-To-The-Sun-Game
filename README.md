@@ -20,7 +20,7 @@ Read the game document or watch the trailer for more information about the game.
 - Created the assets for the portals and animated them
 - Designed the stone level
 
-Made the following scripts:
+Created the following scripts:
 1. Attack
 2. DamageEnemy
 3. Dialogue
