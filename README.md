@@ -79,7 +79,10 @@ Created the following scripts:
 - Designed the grass level.
 - Created different tiles to accommodate different angled blocks
 - Drew all the monsters on the level (Tree, bee, beehive, green giant).
-- Wrote the script in order to allow level change in the game.
+
+Created the following script:
+1. ChangeScene.cs
+
 - Used the animator to allow monster movement on the level.
 - Wrote the document for the games fleadh event.
 - Bug fixes
